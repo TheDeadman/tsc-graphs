@@ -1,0 +1,19 @@
+{
+  "name": "tsc-graphs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheDeadman/tsc-graphs.git"
+  },
+  "author": "Alex Lindemann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheDeadman/tsc-graphs/issues"
+  },
+  "homepage": "https://github.com/TheDeadman/tsc-graphs#readme"
+}
