@@ -14,7 +14,7 @@ import { BarGraph, BarGraphProps } from './BarGraph';
 // import BarGraphMDX from './BarGraph.mdx';
 
 const meta: Meta = {
-    title: 'Graphs/BarGraph',
+    title: 'TSC/BarGraph',
     component: BarGraph,
     argTypes: {
         entries: {

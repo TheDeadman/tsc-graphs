@@ -13,7 +13,7 @@ import { Meta, Story } from '@storybook/react';
 // import BarGraphMDX from './BarGraph.mdx';
 const FakeComponent = () => <div>Fake Component</div>;
 const meta: Meta = {
-  title: 'Graphs/Scatter Plot',
+  title: 'TSC/Scatter Plot',
   component: <FakeComponent />,
   parameters: {
     controls: { expanded: true },
