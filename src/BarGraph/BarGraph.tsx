@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useMemo, ReactNode } from "react";
 import './BarGraph.css';
 import { YAxisMarker, YAxisMarkerWithAxisLabel } from "./components/YAxisMarker";
 
@@ -24,14 +24,16 @@ export interface BarGraphProps {
 
 
 export function getYAxisMarkings(minVal: number, maxVal: number, yLabel: string) {
-    let markings = [];
+    let markings: ReactNode[] = [];
+
+    console.log(yLabel);
 
     if (maxVal <= 10) {
         for (let i = maxVal; i > (minVal); i--) {
             if (i - 1 > minVal) {
                 markings.push(<YAxisMarker label={i} />);
             } else {
-                markings.push(<YAxisMarkerWithAxisLabel label={i} axisLabel={yLabel} />)
+                markings.push(<YAxisMarkerWithAxisLabel label={i} />)
             }
         }
     } else if (maxVal > 10) {
@@ -39,7 +41,7 @@ export function getYAxisMarkings(minVal: number, maxVal: number, yLabel: string)
             if (i - 5 > minVal) {
                 markings.push(<YAxisMarker label={i} />);
             } else {
-                markings.push(<YAxisMarkerWithAxisLabel label={i} axisLabel={yLabel} />)
+                markings.push(<YAxisMarkerWithAxisLabel label={i} />)
             }
         }
     }

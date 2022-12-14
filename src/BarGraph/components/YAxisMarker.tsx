@@ -4,7 +4,7 @@ interface YAxisMarkerProps {
     label: number
 }
 
-export function YAxisMarker({label}: YAxisMarkerProps) {
+export function YAxisMarker({ label }: YAxisMarkerProps) {
     return (
         <div className="bar-graph-y-axis-marker" data-testid="y-axis-marker-with-label" key={`y-axis-${label}`}>
             <div className="bar-graph-y-axis-marker-line"></div>
@@ -15,10 +15,9 @@ export function YAxisMarker({label}: YAxisMarkerProps) {
 
 interface YAxisMarkerWithAxisLabelProps {
     label: number;
-    axisLabel: string
 }
 
-export function YAxisMarkerWithAxisLabel({label, axisLabel}: YAxisMarkerWithAxisLabelProps) {
+export function YAxisMarkerWithAxisLabel({ label }: YAxisMarkerWithAxisLabelProps) {
     return (
         <div className="bar-graph-y-axis-marker" data-testid="y-axis-marker-with-label" key={`y-axis-${label}`}>
             <div className="bar-graph-y-axis-marker-line"></div>
